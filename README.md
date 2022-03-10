@@ -16,4 +16,22 @@ npm install
 npm html --path=*
 ```
 
-> 👉 生成的 html 会以 result-[id].html 方式命名并传入到集群对应的文件夹内（id 为读取 json 中的 id 字段）
+```bash
+// 👉 json 结构和字段
+{
+  "id": "**" // 作为生成该html的唯一标识
+  "data":[
+    {
+      "filePath":"", // svg/png访问路径
+      "description":"" // 描述
+    },
+    {
+      "filePath":"", // svg/png访问路径
+      "description":"" // 描述
+    }
+    // ...
+  ]
+}
+```
+
+> 🚨 生成的 html 会以 result-[id].html 方式命名并传入到集群对应的文件夹内（id 为读取 json 中的 id 字段）
