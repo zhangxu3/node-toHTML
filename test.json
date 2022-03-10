@@ -1,0 +1,33 @@
+{
+  "id": "test1",
+  "data": [
+    {
+      "filePath": "http://10.225.5.201:3000/electron/dev/images/1.png",
+      "description": "测试文字1"
+    },
+    {
+      "filePath": "http://10.225.5.201:3000/electron/dev/images/2.png",
+      "description": "测试文字2"
+    },
+    {
+      "filePath": "http://10.225.5.201:3000/electron/dev/images/3.png",
+      "description": "测试文字3"
+    },
+    {
+      "filePath": "http://10.225.5.201:3000/electron/dev/images/4.png",
+      "description": "测试文字4"
+    },
+    {
+      "filePath": "http://10.225.5.201:3000/electron/dev/images/5.png",
+      "description": "测试文字5"
+    },
+    {
+      "filePath": "http://10.225.5.201:3000/electron/dev/images/6.png",
+      "description": "测试文字6"
+    },
+    {
+      "filePath": "http://10.225.5.201:3000/electron/dev/images/7.png",
+      "description": "测试文字7"
+    }
+  ]
+}
