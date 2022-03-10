@@ -13,7 +13,7 @@ cd node-toHTML
 npm install
 
 # 😆运行，*表示json文件路径，测试可使用./test.json
-npm html --path=*
+npm run html --path=*
 ```
 
 ```bash
