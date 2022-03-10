@@ -1,18 +1,18 @@
 ## 运行脚本
 
-### Author: zhangxu3@genomics.cn
+### Author: zhangxu3@genomics.cn 🚀
 
 ```bash
-# 下载
-git clone https://github.com/caoxiemeihao/electron-vue-vite.git
+# 🥳下载
+git clone https://github.com/zhangxu3/node-toHTML.git
 
-# 进入目录
+# 😉进入目录
 cd node-toHTML
 
-# 安装依赖
+# 😋安装依赖
 npm install
 
-# 运行，*表示json文件路径
+# 😆运行，*表示json文件路径
 npm html --path=*
 ```
 
