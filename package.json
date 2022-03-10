@@ -1,0 +1,9 @@
+{
+  "author": "张旭 <zhangxu3@genomics.cn>",
+  "scripts": {
+    "html": "node toHTML.js %npm_config_path% && scp -rv ./result*.html bigdata_autoanalysis@10.225.5.201:/data/web/electron/dev/"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6"
+  }
+}
