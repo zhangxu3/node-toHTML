@@ -1,24 +1,27 @@
 const fs = require('fs')
 const ejs = require('ejs') //引入ejs
 
-const args = process.argv.slice(2)[0]
-console.log('args', args)
-if (!args) {
-  throw new Error('参数错误，请检查json路径')
-}
-console.log(args)
-const json = fs.readFileSync(args)
+const args = process.argv.slice(2)
+
 try {
-  const { id, data } = JSON.parse(json)
-  // 编译ejs模板生成html文件
-  ejs.renderFile('./template.ejs', { data }, function (err, res) {
-    if (err) throw err
-    fs.writeFile(`result-${id}.html`, res, function (err) {
+  const path = args[0]
+  console.log('path:', path)
+  const json = fs.readFileSync(path)
+  try {
+    const { data, output } = JSON.parse(json)
+    console.log('output:', output)
+    // 编译ejs模板生成html文件
+    ejs.renderFile('./template.ejs', { data }, function (err, res) {
       if (err) throw err
-      console.log('The HTML has been generated!')
-      // 上传html
+      fs.writeFile(`${output}result.html`, res, function (err) {
+        if (err) throw err
+        console.log('The HTML has been generated!')
+        // 上传html
+      })
     })
-  })
-} catch (error) {
-  throw error
+  } catch (error) {
+    throw error
+  }
+} catch (err) {
+  throw err
 }

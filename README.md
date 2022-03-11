@@ -12,26 +12,21 @@ cd node-toHTML
 # 😋安装依赖
 npm install
 
-# 😆运行，*表示json文件路径，测试可使用./test.json
-npm run html --path=*
+# 😆运行，*json=*表示读取的json文件路径
+npm run html --json=*
 ```
 
 ```bash
 // 👉 json 结构和字段
 {
-  "id": "**" // 作为生成该html的唯一标识
+  "title": "**", // 报告标题
+  "output":"", // html输出路径
   "data":[
     {
-      "filePath":"", // svg/png访问路径
-      "description":"" // 描述
-    },
-    {
-      "filePath":"", // svg/png访问路径
-      "description":"" // 描述
+      "path":"", // svg/png路径
+      "description":"" // 图片描述
     }
     // ...
   ]
 }
 ```
-
-> 🚨 生成的 html 会以 result-[id].html 方式命名并传入到集群对应的文件夹内（id 为读取 json 中的 id 字段）
