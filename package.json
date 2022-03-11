@@ -1,7 +1,7 @@
 {
   "author": "张旭 <zhangxu3@genomics.cn>",
   "scripts": {
-    "html": "node toHTML.js %npm_config_path% %npm_config_output%"
+    "html": "node toHTML.js %npm_config_path%"
   },
   "dependencies": {
     "axios": "^0.26.1",
