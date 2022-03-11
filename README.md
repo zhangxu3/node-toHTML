@@ -5,16 +5,16 @@
 ```bash
 # 准备 安装node环境
 
-# 🥳下载
+# 下载
 git clone https://github.com/zhangxu3/node-toHTML.git
 
-# 😉进入目录
+# 进入目录
 cd node-toHTML
 
-# 😋安装依赖
+# 安装依赖
 npm install
 
-# 😆运行，*json=*表示读取的json文件路径
+# 运行，*表示读取的json文件路径
 npm run html --json=*
 ```
 
