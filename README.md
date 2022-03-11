@@ -3,6 +3,8 @@
 ### Author: zhangxu3@genomics.cn 🚀
 
 ```bash
+# 准备 安装node环境
+
 # 🥳下载
 git clone https://github.com/zhangxu3/node-toHTML.git
 
